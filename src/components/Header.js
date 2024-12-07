@@ -16,15 +16,15 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/lArch1t3ct",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/stavros-gkounis/",
   },
   {
     icon: faMedium,
-    url: "https://medium.com",
+    url: "https://medium.com/@stavrosgounis",
   },
   {
     icon: faStackOverflow,
@@ -64,7 +64,16 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            {/* Add social media links based on the `socials` data */}
+            <HStack spacing={8}>
+              { socials.map( (social) => {
+                return(
+                  <a href={social.url}>
+                    <FontAwesomeIcon icon={social.icon} size="2x" />
+                  </a>
+                );
+              }) }
+
+            </HStack>
           </nav>
           <nav>
             <HStack spacing={8}>

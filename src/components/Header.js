@@ -16,15 +16,15 @@ const socials = [
   },
   {
     icon: faGithub,
-    url: "https://github.com/lArch1t3ct",
+    url: "https://github.com",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/stavros-gkounis/",
+    url: "https://www.linkedin.com",
   },
   {
     icon: faMedium,
-    url: "https://medium.com/@stavrosgounis",
+    url: "https://medium.com",
   },
   {
     icon: faStackOverflow,

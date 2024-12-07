@@ -67,17 +67,25 @@ const Header = () => {
             <HStack spacing={8}>
               { socials.map( (social) => {
                 return(
-                  <a href={social.url}>
+                  <a href={social.url} target="_blank"> {/* I am not considering following the link on the same tab a good UX  */}
                     <FontAwesomeIcon icon={social.icon} size="2x" />
                   </a>
                 );
               }) }
-
             </HStack>
           </nav>
           <nav>
             <HStack spacing={8}>
-              {/* Add links to Projects and Contact me section */}
+              <a href="/#projects" 
+                 onClick={handleClick('projects')}
+              >
+                Projects
+              </a>
+              <a href="/#contact-me"
+                 onClick={handleClick('contactme')}
+              >
+                Contact Me
+              </a>
             </HStack>
           </nav>
         </HStack>
